@@ -4,7 +4,7 @@ class Profit_Management:
     def _init_(self) -> None:
         pass
 
-    def profit_percentages(self, price):
+    def calculate_profit_percentages_and_add_to_price(self, price):
         # global product_specific_category
         # try :
         #     product_specific_category = int(input("\nSelect the Product to Caculate the Profit: \n1. Milk Shakes \n2. Cold Items (Pakola, Rooh Afza, lassi, milk bottle, cold milk) \n3. Boiled Milk \n4. Milk \n-- Enter the Option: "))
@@ -48,8 +48,7 @@ class Profit_Management:
             print(f"{i}. {j}")
         print()
 
-    def add_profit_to_price(self):
-        pass
+    
 
 p = Profit_Management()
 print(p.profit_percentages(400))
