@@ -1,7 +1,7 @@
 # Dairy Shop inventory management system
 
 class product:
-    def __init__(self, Name, Quantity, Base_Price):
+    def add_product(self, Name, Quantity, Base_Price):
         self.name = Name.title()
         self.quantity = Quantity
         self.__buyprice = Base_Price
@@ -9,8 +9,10 @@ class product:
     def productInfo(self):
         print(f"\nProduct: {self.name}\nBase Price: {self.__buyprice}\nQuantity: {self.quantity}")
 
-milk = product("Milk", "5 litres", "170 Rupees/litre")
-yogurt = product("Yogurt", "5 Kg", "200/kg") # 200 rs/kg as we buy it for 320-300rs/kg
+# GUIDELINE:
+## Make a New Object of product class and i have make a new function that can only take the detail of product when it is added or you can write that list in this class and define the constructor as that.
+# milk = product("Milk", "5 litres", "170 Rupees/litre")
+# yogurt = product("Yogurt", "5 Kg", "200/kg") # 200 rs/kg as we buy it for 320-300rs/kg
 
 class Inventory():    # --> Inventories
     def __init__(self, ID, Product_List): # The reason for inventory name/ID is to keep an identification of inventories when working with multiple.
@@ -65,13 +67,15 @@ class Inventory():    # --> Inventories
             print("Product is not present in the inventory.")
 
 
+print("Testing...")
 # Testing
-inv = Inventory(4002, [milk,yogurt])
-inv.invInfo()
-inv.remProduct(yogurt)
+# inv = Inventory(4002, [milk,yogurt])
 # inv.invInfo()
-inv.addProduct(yogurt)
+# inv.remProduct(yogurt)
+# # inv.invInfo()
+# inv.addProduct(yogurt)
+# # inv.invInfo()
+# inv.updateProduct(milk, "200 Rupees/litre")
+# # inv.addProduct()
 # inv.invInfo()
-inv.updateProduct(milk, "200 Rupees/litre")
-# inv.addProduct()
-inv.invInfo()
+## Now also change the testing part of the code:
