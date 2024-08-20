@@ -1,4 +1,5 @@
 print("Dairy Management System")
+# Bro if anyone Come to my file and see the code then welcome but this is note for the collaborator that is make an other file and write changes in that and also write a heading and para what did you change and defined all above and also what did you remove and why also give the reasons.
 
 class Profit_Management:
     def calculate_profit_percentages_and_add_to_price(self, price):
