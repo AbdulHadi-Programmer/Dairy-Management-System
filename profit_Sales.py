@@ -1,9 +1,6 @@
 print("Dairy Management System")
 
 class Profit_Management:
-    def _init_(self) -> None:
-        pass
-
     def calculate_profit_percentages_and_add_to_price(self, price):
         # global product_specific_category
         # try :
